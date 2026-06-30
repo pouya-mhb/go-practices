@@ -1,0 +1,26 @@
+# Go build output
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Local Go build/cache folders
+.gocache/
+**/.gocache/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary or backup files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.go.[0-9]*
