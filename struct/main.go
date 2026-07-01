@@ -17,7 +17,7 @@ type User struct {
 	created   time.Time
 }
 
-func newUser(fname string, lname string, bDay string) User {
+func newUser(fname string, lname string, bDay string) *User {
 
 	created := time.Now()
 
@@ -29,7 +29,7 @@ func newUser(fname string, lname string, bDay string) User {
 		created:   created,
 	}
 
-	return userData
+	return &userData
 
 }
 
