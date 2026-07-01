@@ -30,7 +30,11 @@ func newUser(fname string, lname string, bDay string) *User {
 	}
 
 	return &userData
+}
 
+// show output by using methods
+func (userData *User) showOutput() {
+	fmt.Printf("my name is %v %v and I born on %v.", userData.firstName, userData.lastName, userData.birthDay)
 }
 
 func main() {
@@ -40,7 +44,9 @@ func main() {
 	birthday := getUserData("enter birthday : ")
 
 	userData := newUser(firstname, lastname, birthday)
-	fmt.Println(userData)
+	// fmt.Println(userData)
+
+	userData.showOutput() // called showOutput method
 }
 
 func getUserData(text string) string {
